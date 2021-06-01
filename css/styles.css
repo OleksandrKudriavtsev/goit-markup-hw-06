@@ -628,6 +628,7 @@ a {
 
 .footer-socials-div {
   display: inline-block;
+  margin-right: 93px;
 }
 
 .footer-heading {
@@ -663,6 +664,65 @@ a {
   margin-right: 0;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.footer-mail-input-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--background-header-n-photo);
+}
+
+.footer-input-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 16px;
+}
+
+.footer-input-field::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn-div {
+  justify-content: center;
+}
+
+.footer-submit-btn {
+  display: flex;
+  padding: 10px 29px;
+  background: var(--txt-blue);
+  color: var(--background-header-n-photo);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-telegram-plane-svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* ======== modal part ======== */
 
 .backdrop {
@@ -689,13 +749,12 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   background-color: var(--background-header-n-photo);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 8px;
 }
 
 .modal-btn {
@@ -716,4 +775,125 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   fill: currentColor;
+}
+
+.modal-heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--txt-black);
+  margin: 40px 40px 12px 40px;
+}
+
+.input-form {
+  margin: 0 40px 30px 40px;
+}
+
+.input-position-div {
+  position: relative;
+}
+
+.input-form-label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--txt-header-mail-n-phone-n-phototxt);
+}
+
+.input-row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input-person,
+.input-phone,
+.input-mail {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+
+.input-box {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-box::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+.checkbox-div input[type='checkbox'] {
+  }
+  */
+
+.check-box-text {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--txt-header-mail-n-phone-n-phototxt);
+}
+
+.check-box-text-blue {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--txt-blue);
+  text-decoration: underline;
+}
+
+.modal-btn-div {
+  text-align: center;
+}
+
+.submit-form-btn {
+  padding: 10px 55px;
+  background: var(--txt-blue);
+  color: var(--background-header-n-photo);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.input-person {
+  width: 12px;
+  height: 12px;
+}
+
+.input-phone {
+  width: 13px;
+  height: 13px;
+}
+
+.input-mail {
+  width: 15px;
+  height: 12px;
 }

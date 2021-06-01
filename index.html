@@ -459,6 +459,47 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="input-form">
+          <label class="input-form-label" for="user-name">Имя</label>
+          <div class="input-position-div">
+            <input class="input-row" type="text" name="name" id="user-name" />
+            <svg class="input-person">
+              <use href="./images/sprite.svg#icon-input-1"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="tel">Телефон</label>
+          <div class="input-position-div">
+            <input class="input-row" type="tel" name="phone" id="tel" />
+            <svg class="input-phone">
+              <use href="./images/sprite.svg#icon-input-2"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="email">Почта</label>
+          <div class="input-position-div">
+            <input class="input-row" type="email" name="email" id="email" />
+            <svg class="input-mail">
+              <use href="./images/sprite.svg#icon-input-3"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="feedback">Комментарий</label>
+          <textarea
+            class="input-box"
+            name="feedback"
+            placeholder="Введите текст"
+            id="feedback"
+          ></textarea>
+          <div class="checkbox-div">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox" class="check-box-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="check-box-text-blue">Условия договора</a>
+            </label>
+          </div>
+        </form>
+        <div class="modal-btn-div">
+          <button class="submit-form-btn" type="submit">Отправить</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
