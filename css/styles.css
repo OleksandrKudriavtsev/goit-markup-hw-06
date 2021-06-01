@@ -698,7 +698,7 @@ a {
 }
 
 .footer-btn-div {
-  justify-content: center;
+  align-self: center;
 }
 
 .footer-submit-btn {
