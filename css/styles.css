@@ -788,6 +788,13 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close:hover,
+.icon-close:active,
+.icon-close:focus {
+  fill: var(--txt-blue);
 }
 
 .modal-heading {
@@ -824,6 +831,7 @@ a {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-person,
@@ -842,6 +850,7 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-box::placeholder {
@@ -859,8 +868,8 @@ a {
 
 /*
 .checkbox-div input[type='checkbox'] {
-  }
-  */
+}
+*/
 
 .check-box-text {
   margin-left: 8px;
@@ -904,14 +913,49 @@ a {
 .input-person {
   width: 12px;
   height: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*
+.checkbox-div input [type='checkbox'] {
+}
+*/
 
 .input-phone {
   width: 13px;
   height: 13px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-mail {
   width: 15px;
   height: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-row:hover,
+.input-row:active,
+.input-row:focus,
+.input-box:hover,
+.input-box:active,
+.input-box:focus {
+  border-color: var(--txt-blue);
+}
+
+.input-row:hover + .input-person,
+.input-row:active + .input-person,
+.input-row:focus + .input-person,
+.input-row:hover + .input-phone,
+.input-row:active + .input-phone,
+.input-row:focus + .input-phone,
+.input-row:hover + .input-mail,
+.input-row:active + .input-mail,
+.input-row:focus + .input-mail {
+  fill: var(--txt-blue);
+}
+
+.input-person:hover,
+.input-phone:hover,
+.input-mail:hover {
+  fill: var(--txt-blue);
 }
