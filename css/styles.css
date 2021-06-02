@@ -511,10 +511,13 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* border не ховериться при tab */
 .companies-link-item:hover,
 .companies-link-item:active,
 .companies-link-item:focus,
-.company-logo:hover {
+.company-logo:hover,
+.company-logo:active,
+.company-logo:focus {
   border-color: var(--txt-blue);
 }
 
@@ -632,6 +635,7 @@ a {
 }
 
 .footer-heading {
+  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -798,6 +802,8 @@ a {
 }
 
 .modal-heading {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -831,6 +837,7 @@ a {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -860,7 +867,7 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-div {
+.checkbox-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -870,6 +877,36 @@ a {
 .checkbox-div input[type='checkbox'] {
 }
 */
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.checkbox-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--txt-black);
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-origin 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--txt-blue);
+  background-image: url(/images/icon-checbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
 
 .check-box-text {
   margin-left: 8px;
@@ -885,6 +922,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--txt-blue);
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .modal-btn-div {
